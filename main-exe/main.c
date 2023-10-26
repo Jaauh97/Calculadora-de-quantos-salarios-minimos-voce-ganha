@@ -33,6 +33,10 @@ if (m == 2)
   printf("O valor acima esta correto? Digite 1 para SIM e 2 para NAO\n");
   scanf("%d", &n);
   
+  qtd_sal_min2 = sal2 / sal_min;
+  
+  printf("O seu Total recebido de Salarios Minimos Foi de: %.1f.\n", qtd_sal_min2);
+  
 if(n==2){
 	
 printf("Recomece o Programa.");
@@ -42,6 +46,7 @@ printf("Recomece o Programa.");
 
 qtd_sal_min = sal / sal_min;
 
+printf("O seu Total recebido de Salarios Minimos Foi de: %.1f.\n ",qtd_sal_min);
 
 
 
