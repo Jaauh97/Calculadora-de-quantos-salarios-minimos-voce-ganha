@@ -28,7 +28,7 @@ switch (m)
 
     case 2:
         
-        qtd_sal_min2 = sal2 / sal_min;
+        
         
         printf("Digite Novamente o Valor do Seu Salario: (EX: 1.000) \n");
         scanf("%f", &sal2);
@@ -37,13 +37,15 @@ switch (m)
         printf("Esta certo? Digite 1 Para SIM e 2 Para NAO\n");
         scanf("%d", &n);
         
+        qtd_sal_min2 = sal2 / sal_min; 
+        
         if(n==2){
         	
         printf("Reinicie o Programa");
         
     } else{
         
-		printf("O seu Total recebido de Salarios Minimos Foi de: %.2f", qtd_sal_min2);	
+		printf("O seu Total recebido de Salarios Minimos Foi de: %.2f.\n", qtd_sal_min2);	
     }
         break;
 
