@@ -7,8 +7,12 @@ int main(int argc, char *argv[]) {
 	
 	
 float sal , sal2, qtd_sal_min, qtd_sal_min2;
+float sal_min;
 int m; 
-const float sal_min = 1.320;
+int n;
+
+printf("Digite o Valor do Salario Minimo: ");
+scanf("%f", &sal_min);
 
 printf("Digite Seu Salario Atual:\n");
 scanf("%f", &sal);
@@ -23,8 +27,20 @@ scanf("%d", &m);
 if (m == 2)
 {
   printf("Digite o Valor Correto do Seu Salario\n"); 
+  scanf("%f", &sal2 );
+  
+  printf("O Valor Digitado foi %.3f.\n ",sal2);
+  printf("O valor acima esta correto? Digite 1 para SIM e 2 para NAO\n");
+  scanf("%d", &n);
+  
+if(n==2){
+	
+printf("Recomece o Programa.");
+}
  
 }
+
+qtd_sal_min = sal / sal_min;
 
 
 
